@@ -1,0 +1,13 @@
+{
+  "appId": "com.bg.colortimer",
+  "appName": "color-timer",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+  <ion-fab vertical="top" horizontal="end" slot="fixed" class="little-down">
+    <ion-fab-button class="my-button">
+      <ion-icon name="timer-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="bottom">
+      <ion-fab-button *ngIf="!started()"><ion-icon name="create-outline" (click)="openPicker()"></ion-icon></ion-fab-button>
+      <ion-fab-button *ngIf="!started()" (click)="start()"><ion-icon name="caret-forward-circle-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button *ngIf="started()" (click)="stop()"><ion-icon name="stop-circle-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <div id="finish" [ngClass]="{'end-one': timerService.endOne, 'end-two': timerService.endTwo, 'end-complete': timerService.endComplete}" >
+    <div>END</div>
+  </div>
+  <div id="go" [ngClass]="{'go-one': timerService.goOne, 'go-two': timerService.goTwo, 'go-complete': timerService.goComplete}">
+    <div>GO</div>
+  </div>
+  <div id="start" [ngClass]="{'start-one': timerService.startOne, 'start-two': timerService.startTwo, 'start-complete': timerService.startComplete}">
+    <div>START</div>
+  </div>

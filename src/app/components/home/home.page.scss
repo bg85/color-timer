@@ -1,0 +1,94 @@
+div {
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.start-one {
+  background-color: #fbfbb8;
+  height: 33%;
+  color: #818402;
+}
+
+.start-two {
+  background-color: rgb(255, 255, 77, 0.8);
+  height: 33%;
+  color: #818402;
+}
+
+.start-complete {
+  background-color: rgb(247, 247, 1);
+  height: 33%;
+  color: #818402;
+}
+
+.go-one {
+  background-color: rgb(51, 255, 51, 0.5);
+  height: 34%;
+  color: #5a7b59;
+}
+
+.go-two {
+  background-color: rgb(51, 255, 51, 0.8);
+  height: 34%;
+  color: #5a7b59;
+}
+
+.go-complete {
+  background-color: #00e600;
+  height: 34%;
+  color: #5a7b59;
+}
+
+.end-one {
+  background-color: rgb(255, 71, 26, 0.5);
+  height: 33%;
+  color: #6b524f;
+}
+
+.end-two {
+  background-color: rgb(255, 71, 26, 0.8);
+  height: 33%;
+  color: #6b524f;
+}
+
+.end-complete {
+  background-color: #cc2900;
+  height: 33%;
+  color: #6b524f;
+}
+
+div div {
+  padding-top: 32%;
+}
+
+.done-modal {
+  --background: #222;
+  --width: 100% !important;
+  --height: 100% !important;
+  padding: 0% 0%  !important;
+}
+
+.little-down {
+  margin-top: 5%;
+  margin-right: 3%;
+}
+
+.my-button {
+  --background: transparent;
+  --background-activated: transparent;
+  --background-focused: transparent;
+  --background-hover: transparent;
+}
+
+.modal-fullscreen {
+  .modal-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+}
